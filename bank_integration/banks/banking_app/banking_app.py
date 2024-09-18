@@ -8,6 +8,8 @@ from pnc_bank import PNCBank
 def main():
     api_key = getpass.getpass("Enter your API key: ")
     bank_api = {
+        "ZhangShaoHai Bank": ZhangShaoHaiBank(api_key),
+        "HengChun Bank": HengChunBank(api_key),
         "Citi Bank": CitiBank(api_key),
         "Wells Fargo": WellsFargo(api_key),
         "PNC Bank": PNCBank(api_key)
